@@ -1,8 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+First, install dependencies with:
+```bash
+npm install
+```
 
-First, run the development server:
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -20,6 +24,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+This project relies on a third-party job listings API. The API key used during development had a limited request quota and may no longer return live job listings once the quota has been exhausted.
+To fetch live job listings, you will need to obtain your own API key and configure it in the project's environment variables.
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
